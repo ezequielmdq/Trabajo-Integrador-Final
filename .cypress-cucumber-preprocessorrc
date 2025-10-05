@@ -1,0 +1,25 @@
+
+{
+  "json": {
+    "enabled": true,
+    "output": "jsonlogs/log.json",
+    "formatter": "cucumber-json-formatter.exe"
+  },
+  "messages": {
+    "enabled": true,
+    "output": "cypress/reports/jsonlogs/messages.ndjson"
+  },
+  "html": {
+    "enabled": true,
+    "output": "cypress/reports/cucumber-report.html"
+  },
+  "stepDefinitions": [
+    "[filepath]/**/*.{js,ts}",
+    "[filepath].{js,ts}",
+    "cypress/journeys/step_definitions/**/*.{js,ts}",
+    "[filepath]\\***.{js,ts}",
+    "[filepath].{js,ts}",
+    "cypress\\journeys\\step_definitions\\**\\*.{js,ts}"
+  ],
+  "filterSpecs": true
+}
